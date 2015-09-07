@@ -1,0 +1,33 @@
+{
+  "name": "redux-create-reducer",
+  "version": "1.0.0",
+  "description": "Publishing createReducer from http://rackt.github.io/redux/docs/recipes/ReducingBoilerplate.html",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test-cov": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha 'test/**/*.js' -- --reporter dot",
+    "test-travis": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha 'test/**/*.js' -- -R spec",
+    "test": "mocha"
+  },
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/redux-create-reducer.git"
+  },
+  "keywords": [
+    "redux",
+    "reducer"
+  ],
+  "bugs": {
+    "url": "https://github.com/kolodny/redux-create-reducer/issues"
+  },
+  "homepage": "https://github.com/kolodny/redux-create-reducer#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.22",
+    "coveralls": "^2.11.4",
+    "expect": "^1.9.0",
+    "istanbul": "^0.3.19",
+    "mocha": "^2.3.1"
+  }
+}
