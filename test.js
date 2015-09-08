@@ -11,7 +11,7 @@ describe('createReducer', function() {
 
   it('returns the correct state on the first call with a matche', function() {
     const reducerMap = {
-      YOLO() {
+      YOLO: function() {
         return 'theproperstate';
       }
     };
@@ -28,7 +28,7 @@ describe('createReducer', function() {
 
   it('returns a new state if a value matched', function() {
     const reducerMap = {
-      YOLO() {
+      YOLO: function() {
         return {someObj: 2};
       }
     };
