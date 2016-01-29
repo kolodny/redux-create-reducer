@@ -37,4 +37,18 @@ describe('createReducer', function() {
     expect(reducer(state, {type: 'YOLO'})).toEqual({someObj: 2});
   });
 
+  it('warns about undefined action type names, but keeps them intact', function() {
+    var YOLO = undefined;
+    var reducerMap = {
+      [YOLO]: function() {
+        return 'theproperstate';
+      }
+    };
+
+    var spy = expect.spyOn(console, 'warn')
+    var reducer = createReducer({}, reducerMap);
+    expect(spy).toHaveBeenCalled()
+    expect(reducer(undefined, {type: 'undefined'})).toEqual('theproperstate');
+  });
+
 });
