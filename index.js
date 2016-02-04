@@ -1,6 +1,9 @@
 "use strict";
 
-var __DEV__ = typeof process !== 'undefined' && typeof process.env !== 'undefined' && process.env.NODE_ENV !== 'production';
+var __DEV__ = false;
+try {
+  __DEV__ = process.env.NODE_ENV !== 'production';
+} catch (e) {}
 
 exports.createReducer = function createReducer(initialState, handlers) {
   if (__DEV__ && handlers['undefined']) {
