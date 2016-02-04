@@ -1,6 +1,6 @@
 {
   "name": "redux-create-reducer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Publishing createReducer from http://rackt.github.io/redux/docs/recipes/ReducingBoilerplate.html",
   "main": "./lib/index.js",
   "scripts": {
