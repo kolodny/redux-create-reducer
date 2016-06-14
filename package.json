@@ -2,7 +2,7 @@
   "name": "redux-create-reducer",
   "version": "1.1.0",
   "description": "Publishing createReducer from http://rackt.github.io/redux/docs/recipes/ReducingBoilerplate.html",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "scripts": {
     "test-cov": "node ./node_modules/istanbul/lib/cli.js cover -x test.js node_modules/mocha/bin/_mocha 'test.js' -- --reporter dot",
     "test-travis": "node ./node_modules/istanbul/lib/cli.js cover -x test.js ./node_modules/mocha/bin/_mocha 'test.js' -- -R spec",
