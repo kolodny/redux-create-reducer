@@ -6,7 +6,7 @@ redux-create-reducer
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-[This code packaged as a node module](https://github.com/rackt/redux/blob/9b0630fe9ea8209777fed7cac78fee7ee76fce67/docs/recipes/ReducingBoilerplate.md#generating-reducers)
+[This code packaged as a node module](http://redux.js.org/docs/recipes/ReducingBoilerplate.html#generating-reducers)
 
 Usage:
 
