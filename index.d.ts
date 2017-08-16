@@ -1,10 +1,10 @@
-interface Action {
+export interface Action {
     type: string;
 }
 
 export type Reducer<S, A extends Action> = (state: S, action: A) => S;
 
-interface Handlers<S> {
+export interface Handlers<S> {
     [actionType: string]: Reducer<S, Action>;
 }
 
