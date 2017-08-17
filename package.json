@@ -21,6 +21,7 @@
   "bugs": {
     "url": "https://github.com/kolodny/redux-create-reducer/issues"
   },
+  "types": "index.d.ts",
   "homepage": "https://github.com/kolodny/redux-create-reducer#readme",
   "devDependencies": {
     "babel": "^5.8.23",
