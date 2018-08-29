@@ -1,5 +1,4 @@
-redux-create-reducer
-===
+# redux-create-reducer
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
@@ -16,16 +15,19 @@ import * as ActionTypes from '../constants/ActionTypes';
 
 const initialState = [];
 
-
 export const todos = createReducer(initialState, {
   [ActionTypes.ADD_TODO](state, action) {
-    let text = action.text.trim();
+    const text = action.text.trim();
     return [...state, text];
   }
+
+  [ActionTypes.REMOVE_TODO](state, action) {
+    return [...state.filter((_, i) => i !== action.index)];
+  }
+
+  // All other action types result in state being returned
 })
 ```
-
-
 
 [npm-image]: https://img.shields.io/npm/v/redux-create-reducer.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/redux-create-reducer
