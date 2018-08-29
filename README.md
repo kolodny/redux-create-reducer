@@ -22,7 +22,7 @@ export const todos = createReducer(initialState, {
   }
 
   [ActionTypes.REMOVE_TODO](state, action) {
-    return [...state.filter((_, i) => i !== action.index)];
+    return state.filter((_, i) => i !== action.index);
   }
 
   // All other action types result in state being returned
