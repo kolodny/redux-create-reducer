@@ -24,8 +24,8 @@
   "types": "index.d.ts",
   "homepage": "https://github.com/kolodny/redux-create-reducer#readme",
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-core": "^5.8.22",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
     "coveralls": "^2.11.4",
     "expect": "^1.14.0",
     "istanbul": "^0.4.5",
