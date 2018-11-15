@@ -1,11 +1,7 @@
-export interface Action {
-    type: string;
+import { Action, AnyAction, Reducer } from 'redux';
+
+export interface Handlers<S, A extends Action = AnyAction> {
+    [actionType: string]: Reducer<S, A>;
 }
 
-export type Reducer<S, A extends Action> = (state: S, action: A) => S;
-
-export interface Handlers<S> {
-    [actionType: string]: Reducer<S, Action>;
-}
-
-export declare function createReducer<S>(initialState: S, handlers: Handlers<S>): Reducer<S, Action>;
+export declare function createReducer<S, A extends Action = AnyAction>(initialState: S, handlers: Handlers<S, A>): Reducer<S, A>;

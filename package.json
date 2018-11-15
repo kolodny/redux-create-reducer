@@ -29,5 +29,9 @@
     "expect": "^1.14.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0"
+    "redux": "^4.0.1"
+  },
+  "peerDependencies": {
+    "redux": "*"
   }
 }
