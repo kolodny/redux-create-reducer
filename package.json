@@ -5,8 +5,9 @@
   "main": "./index.js",
   "scripts": {
     "test-cov": "node ./node_modules/istanbul/lib/cli.js cover -x test.js node_modules/mocha/bin/_mocha 'test.js' -- --reporter dot",
-    "test-travis": "node ./node_modules/istanbul/lib/cli.js cover -x test.js ./node_modules/mocha/bin/_mocha 'test.js' -- -R spec",
-    "test": "mocha"
+    "test-travis": "node ./node_modules/istanbul/lib/cli.js cover -x test.js ./node_modules/mocha/bin/_mocha 'test.js' -- -R spec && npm run ts-test",
+    "ts-test": "tsc --noEmit ts-test",
+    "test": "mocha && npm run ts-test"
   },
   "author": "Moshe Kolodny",
   "license": "MIT",
@@ -29,7 +30,8 @@
     "expect": "^1.14.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "typescript": "^3.3.3333"
   },
   "peerDependencies": {
     "redux": "*"
