@@ -2,9 +2,8 @@ language: node_js
 node_js:
   - 10
   - 12
+  - 13
   - 14
-  - 15
-  - 16
   - lts/*
 script: "npm run-script test-travis"
 # Send coverage data to Coveralls
