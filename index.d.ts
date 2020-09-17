@@ -12,5 +12,5 @@ declare type Handlers<S, A extends Action = AnyAction> = {
 export declare function createReducer<S, A extends Action = AnyAction>(
     initialState: S,
     handlers: Handlers<S, A>,
-): (state: S | undefined, action: A) => any;
+): (state: S | undefined, action: A) => S;
 export {}
